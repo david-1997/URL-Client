@@ -1,0 +1,11 @@
+<form class="form-group m-4 col-lg-4" [formGroup]="form" (submit)="postURL()">
+    <div class="row">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Paste original URL"
+                aria-label="Paste original URL" formControlName="URL">
+            <div class="input-group-append">
+                <input type="submit" class="btn btn-primary" value="Shrink">
+            </div>
+        </div>
+    </div>
+</form>
