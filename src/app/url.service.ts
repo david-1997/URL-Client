@@ -9,9 +9,9 @@ export class URLService {
 
   constructor(private http: HttpClient) { }
   postURL(data): Observable<any> {
-    return this.http.post('https://url-nodejs.herokuapp.com/create', data)
+    return this.http.post('https://url-server-production.up.railway.app/create', data)
   }
   getURLs(): Observable<any> {
-    return this.http.get('https://url-nodejs.herokuapp.com/view')
+    return this.http.get('https://url-server-production.up.railway.app/view')
   }
 }
